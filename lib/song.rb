@@ -33,7 +33,7 @@ def self.genre_count
   genre_count = Hash.new(0)
     @name.each { |name | name += 1}
   end
-end
+
 
 def self.artist_count
 artist_count = {}
