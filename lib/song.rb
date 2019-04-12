@@ -30,11 +30,13 @@ def self.artists
 end
 
 def self.genre_count
-@@genre_count = {"#{@genre}" => @name.count}
+  genre_count = Hash.new(0)
+    @name.each { |name | name += 1}
+  end
 end
 
 def self.artist_count
-@@artist_count
+artist_count = {}
 end
 
 end
